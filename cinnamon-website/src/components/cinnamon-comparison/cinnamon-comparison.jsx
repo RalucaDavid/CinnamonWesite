@@ -6,7 +6,7 @@ const CinnamonComparison = ({ currentLang }) => {
   const T = translations[currentLang].comparison;
 
   return (
-    <section className="comparisonSection" id="beneficii">
+    <section className="comparisonSection" id="comparison">
       <h2 className="comparison-sectionTitle">{T.title}</h2>
       <div className="comparisonGrid">
         <div className="comparisonCard ceylon">

@@ -6,7 +6,7 @@ const CognitiveImpact = ({ currentLang }) => {
   const T = translations[currentLang].cognitive;
 
   return (
-    <section className="cognitiveSection" id="cognitiv">
+    <section className="cognitiveSection" id="cognitive">
       <h2 className="cognitiveSectionTitle">{T.title}</h2>
       <p className="cognitiveSectionSubtitle">{T.subtitle}</p>
 

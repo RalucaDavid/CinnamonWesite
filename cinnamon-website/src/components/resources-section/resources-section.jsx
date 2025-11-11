@@ -6,7 +6,7 @@ const ResourcesSection = ({ currentLang }) => {
   const T = translations[currentLang].resources;
 
   return (
-    <section className="resourcesSection" id="resurse">
+    <section className="resourcesSection" id="resources">
       <div className="resourcesSectionContainer">
         <h2 className="resourcesSectionTitle">{T.title}</h2>
         <p className="resourcesSectionCtaText">{T.cta}</p>

@@ -10,7 +10,7 @@ const HeroSection = ({ currentLang }) => {
       <div className="heroContent">
         <h1 className="heroTitle">{T.title}</h1>
         <p className="heroSubtitle">{T.subtitle}</p>
-        <a href="#recipes" className="heroCtaButton">
+        <a href="#recipes" className="ctaButton">
           {T.cta}
         </a>
         <p className="heroTrilingualNote">{T.trilingualNote}</p>

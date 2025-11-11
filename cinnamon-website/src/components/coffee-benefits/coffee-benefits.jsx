@@ -6,7 +6,7 @@ const CoffeeBenefits = ({ currentLang }) => {
   const T = translations[currentLang].coffee;
 
   return (
-    <section className="coffeeSection" id="cafea">
+    <section className="coffeeSection" id="coffee">
       <h2 className="coffeeSectionTitle">{T.title}</h2>
       <div className="coffeeSectionContent">
         <div className="quoteBox">
