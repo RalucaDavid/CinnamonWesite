@@ -44,6 +44,8 @@ The app will run at http://localhost:5173.
 npm run dev
 ```
 
+---
+
 ## 📸 Photos
 <img width="1859" height="961" alt="image" src="https://github.com/user-attachments/assets/093485d3-3f2b-4527-9702-f6e38a496b66" />
 <img width="1857" height="962" alt="image" src="https://github.com/user-attachments/assets/a4f9bfbd-adfa-4897-bccf-b6f68f74a40c" />
