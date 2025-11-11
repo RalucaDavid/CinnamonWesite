@@ -1,0 +1,85 @@
+$color-beige-warm: #faf7f5;
+$color-cinnamon-dark: #7b3f00;
+$color-brown-accents: #a0522d;
+$color-text-main: #333333;
+$primary-font: "Roboto", sans-serif;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: $color-beige-warm;
+  padding: 15px 5%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  font-family: $primary-font;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-cinnamon-dark;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+  }
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+}
+
+.navMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  .navItem {
+    margin-left: 25px;
+  }
+}
+
+.navLink {
+  text-decoration: none;
+  color: $color-text-main;
+  font-size: 1rem;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-cinnamon-dark;
+  }
+}
+
+.headerLangSelector {
+  margin-left: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1;
+
+  a {
+    text-decoration: none;
+    color: $color-cinnamon-dark;
+    margin: 0 5px;
+
+    &:hover {
+      color: $color-brown-accents;
+    }
+
+    &.active {
+      font-weight: 700;
+      border-bottom: 2px solid $color-cinnamon-dark;
+    }
+  }
+}

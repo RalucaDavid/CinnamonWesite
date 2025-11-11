@@ -1,7 +1,43 @@
-$primary-color: #007bff;
+$color-beige-warm: #faf7f5;
+$color-cinnamon-dark: #7b3f00;
+$color-brown-accents: #a0522d;
+$color-white: #ffffff;
+$color-text-main: #333333;
+$primary-font: "Roboto", sans-serif;
 
-.app-header {
-  background-color: $primary-color;
-  padding: 20px;
-  color: white;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: 400;
+  color: $color-text-main;
+  background-color: $color-beige-warm;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: $color-cinnamon-dark;
+  line-height: 1.2;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: $color-cinnamon-dark;
+  color: $color-white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-brown-accents;
+  }
 }

@@ -1,9 +1,27 @@
+import React, { useState } from "react";
+import Header from "./components/header/header";
+import HeroSection from "./components/hero-section/hero-section";
+import CinnamonComparison from "./components/cinnamon-comparison/cinnamon-comparison";
+import Footer from "./components/footer/footer";
+
 import "./styles.scss";
 
 function App() {
+  const [currentLang, setCurrentLang] = useState("RO");
+
+  const handleLangChange = (langCode) => {
+    setCurrentLang(langCode);
+  };
+
   return (
-    <div className="app-header">
-      <h1>Hello, Vite + React + Sass!</h1>
+    <div className="App">
+      <Header currentLang={currentLang} onLangChange={handleLangChange} />
+      <div style={{ height: "70px" }}></div>
+      <main>
+        <HeroSection currentLang={currentLang} />
+        <CinnamonComparison currentLang={currentLang} />
+      </main>
+      <Footer currentLang={currentLang} />
     </div>
   );
 }
