@@ -1,0 +1,47 @@
+$color-cinnamon-dark: #7b3f00;
+$color-brown-accents: #a0522d;
+$color-white: #ffffff;
+$color-beige-warm: #faf7f5;
+
+.cognitiveSection {
+  padding: 80px 5%;
+  background-color: $color-white;
+  text-align: center;
+}
+
+.cognitiveSectionSubtitle {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.impactCardsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.impactCard {
+  flex: 1;
+  background-color: lighten($color-beige-warm, 3%);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($color-beige-warm, 5%);
+  }
+
+  .iconBrain {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+    color: $color-brown-accents;
+  }
+
+  h3 {
+    color: $color-cinnamon-dark;
+  }
+}

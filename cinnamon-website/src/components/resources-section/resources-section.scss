@@ -1,0 +1,39 @@
+$color-cinnamon-dark: #7b3f00;
+$color-brown-accents: #a0522d;
+$color-white: #ffffff;
+
+.resourcesSection {
+  padding: 60px 5%;
+  background-color: $color-cinnamon-dark;
+  color: $color-white;
+  text-align: center;
+}
+
+.resourcesSectionTitle {
+  color: $color-white;
+  margin-bottom: 10px;
+}
+
+.resourcesSectionCtaText {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.resourcesGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.resourceItem {
+  background-color: $color-brown-accents;
+
+  &:hover {
+    background-color: darken($color-brown-accents, 10%);
+  }
+
+  .iconDownload {
+    margin-right: 5px;
+  }
+}

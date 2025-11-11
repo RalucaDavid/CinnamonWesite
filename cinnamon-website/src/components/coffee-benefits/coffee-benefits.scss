@@ -1,0 +1,50 @@
+$color-beige-warm: #faf7f5;
+$color-cinnamon-dark: #7b3f00;
+
+.coffeeSection {
+  padding: 60px 5%;
+  background-color: $color-beige-warm;
+  text-align: center;
+}
+
+.coffeeSectionTitle {
+  margin-bottom: 40px;
+}
+
+.coffeeSectionContent {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+  text-align: left;
+}
+
+.quoteBox {
+  flex: 1;
+  border-left: 5px solid $color-cinnamon-dark;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quoteBoxAuthor {
+  font-weight: 700;
+  margin-top: 10px;
+  color: $color-cinnamon-dark;
+}
+
+.coffeeBenefitsList {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.benefitItem {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+
+  .iconCinnamon {
+    margin-right: 10px;
+    color: $color-cinnamon-dark;
+    font-size: 1.2em;
+  }
+}

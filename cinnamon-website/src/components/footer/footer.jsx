@@ -11,7 +11,7 @@ const Footer = ({ currentLang }) => {
     <footer className="footer">
       <div className="footerContent">
         <div className="footerColumn navLinks">
-          <h4>Navigare Rapidă</h4>
+          <h4>{T.headings.quickNav}</h4>
           <ul>
             {navLinks.map((link) => (
               <li key={link}>
@@ -21,7 +21,7 @@ const Footer = ({ currentLang }) => {
           </ul>
         </div>
         <div className="footerColumn legalLinks">
-          <h4>Info Legal</h4>
+          <h4>{T.headings.legalInfo}</h4>
           <ul>
             {legalLinks.map((link) => (
               <li key={link}>
@@ -31,11 +31,10 @@ const Footer = ({ currentLang }) => {
           </ul>
         </div>
         <div className="footerColumn contactInfo">
-          <h4>Contact</h4>
+          <h4>{T.headings.contact}</h4>
           <p>{T.contact}</p>
         </div>
       </div>
-
       <div className="footerBottom">
         <p className="footerCopyright">{T.copyright}</p>
       </div>
