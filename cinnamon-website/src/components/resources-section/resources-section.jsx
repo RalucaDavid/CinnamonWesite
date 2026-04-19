@@ -18,7 +18,10 @@ const ResourcesSection = ({ currentLang }) => {
               target="_blank"
               className="resourceItem ctaButton"
             >
-              <span className="iconDownload">⬇️</span> {item.label}
+              <span className="iconDownload" aria-hidden="true">
+                ⬇️
+              </span>{" "}
+              {item.label}
             </a>
           ))}
         </div>

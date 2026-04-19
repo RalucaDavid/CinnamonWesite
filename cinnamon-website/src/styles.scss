@@ -41,3 +41,15 @@ h3 {
     background-color: $color-brown-accents;
   }
 }
+
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/src/assets/hero-coffee-cinnamon.jpg");
+}
+
+a:focus,
+button:focus {
+  outline: 3px solid $color-brown-accents !important;
+  outline-offset: 3px;
+}

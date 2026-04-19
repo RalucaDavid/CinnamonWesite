@@ -13,7 +13,9 @@ const CognitiveImpact = ({ currentLang }) => {
       <div className="impactCardsGrid">
         {T.effects.map((effect, index) => (
           <div key={index} className="impactCard">
-            <span className="iconBrain">🧠</span>
+            <span className="iconBrain" aria-hidden="true">
+              🧠
+            </span>
             <h3>{effect.name}</h3>
             <p>{effect.desc}</p>
           </div>

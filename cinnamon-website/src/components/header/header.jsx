@@ -28,6 +28,7 @@ const Header = ({ currentLang, onLangChange }) => {
             <React.Fragment key={code}>
               <a
                 href="#"
+                aria-current={code === currentLang ? "language" : undefined}
                 onClick={(e) => {
                   e.preventDefault();
                   onLangChange(code);

@@ -16,7 +16,9 @@ const CoffeeBenefits = ({ currentLang }) => {
         <ul className="coffee-benefits-list">
           {T.benefits.map((benefit, index) => (
             <li key={index} className="benefitItem">
-              <span className="iconCinnamon">☕</span>
+              <span className="iconCinnamon" aria-hidden="true">
+                ☕
+              </span>
               {benefit}
             </li>
           ))}
